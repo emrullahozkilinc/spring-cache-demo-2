@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 @EnableCaching //ConcurrentMapCacheManager'ı aktive eder ve ayrıca bunun için bir bean açmamıza gerek kalmaz.
 public class CachingConfiguration {
 
-    @Bean
-    public CacheManager cacheManager() {
-        return new ConcurrentMapCacheManager("addresses"); //burada belirtilen cache isimleri kullanılmak zorundadır.
-    }
+//    @Bean
+//    public CacheManager cacheManager() {
+//        return new ConcurrentMapCacheManager("addresses"); //burada belirtilen cache isimleri kullanılmak zorundadır.
+//    }
 }

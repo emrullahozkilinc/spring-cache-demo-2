@@ -39,8 +39,8 @@ public class LocationService {
         return new LocationApiResponse.CityData(city.id(), "",0,0,0,null,false,null,null,null,null);
     }
 
-    @Scheduled(cron = "*/1 * * * *")
-    @CacheEvict("locations")
+    @Scheduled(cron = "*/1 * * * * *")
+    @CacheEvict(value = "locations")
     public void clearLocationCache(){
         log.warn("location cache cleared");
     }
